@@ -1,1 +1,1 @@
-这是一个学习文档整合
+This is a study document.
