@@ -1,0 +1,32 @@
+#!/bin/bash
+author="zhangys"
+echo "开始执行，Author: "${author}
+
+nameArray=("Tom" "Jack" "Li")
+ageArray=(29 33 17)
+num=3
+
+echo "当前共有"${#nameArray[@]}"个用户"
+i=0
+echo
+echo "姓名：年龄"
+for name in ${nameArray[@]}
+do
+  echo $name":"${ageArray[i]}
+  i=($i+1)
+done
+
+echo
+i=0
+maxAge=0
+maxAgename=""
+for name in ${nameArray[@]}
+do
+  if [ ${ageArray[i]} -gt ${maxAge} ]
+  then
+    maxAge=${ageArray[i]}
+    maxAgename=${nameArray[i]}
+  fi
+  i=($i+1)
+done
+echo "年龄最大的人是"${maxAgename}"("${maxAge}")"
