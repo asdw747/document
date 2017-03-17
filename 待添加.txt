@@ -1,5 +1,0 @@
-IDEA使用手册
-Shell常规语法
-kubernetes的yaml文件
-Maven项目学习（SpringMVC）
-vim使用指南
