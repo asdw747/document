@@ -8,7 +8,6 @@ num=3
 
 echo "当前共有"${#nameArray[@]}"个用户"
 i=0
-echo
 echo "姓名：年龄"
 for name in ${nameArray[@]}
 do
