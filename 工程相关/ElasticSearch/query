@@ -1,0 +1,33 @@
+{
+  "bool":{
+    "filter":[{
+      "match":{
+        "namespace":{
+          "query":"d48ec51c7-f3d1-4344-a1b",
+          "type":"phrase"
+        }
+      }
+    },{
+      "match":{
+        "tag":{
+          "query":"dtdream",
+          "type":"phrase_prefix"
+        }
+      }
+    }],
+    "must":[{
+      "range":{
+        "logtime"{
+          "from":"2017-09-26T00:00:00Z",
+          "include_lower":true,
+          "include_upper":true,
+          "to":"2017-09-28T23:59:00Z"
+        }
+      }
+    },{
+      "term":{
+        "_type":"app"
+      }
+    }]
+  }
+}
